@@ -1,13 +1,18 @@
 import React from "react";
+import "./ExpenseItem.css";
 
-const ExpenseItem = () => {
-    return (
-        <div>
-            <h1>lala</h1>
-            <p>lala</p>
-            <p>lala</p>
-        </div>
-    );
-}
+const ExpenseItem = (props) => {
+  return (
+    <div className="expense-item">
+      <section>
+        <p>{props.date.toISOString()}</p>
+      </section>
+      <section className="expense-item__description">
+        <h2>{props.title}</h2>
+        <p className="expense-item__price">${props.amount}</p>
+      </section>
+    </div>
+  );
+};
 
 export default ExpenseItem;
