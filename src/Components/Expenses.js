@@ -1,10 +1,11 @@
 import React from "react";
 import "./Expenses.css"
 import ExpenseItem from "./ExpenseItem";
+import ExpenseCard from "./ExpenseCard";
 
-const NewExpensesList = ({items}) => {
+const Expenses = ({items}) => {
   return (
-    <section className="expenses">
+    <ExpenseCard className="expenses">
       <ExpenseItem
         title={items[0].title}
         date={items[0].date}
@@ -25,8 +26,8 @@ const NewExpensesList = ({items}) => {
         date={items[3].date}
         amount={items[3].amount}
       />
-    </section>
+    </ExpenseCard>
   );
 };
 
-export default NewExpensesList;
+export default Expenses;

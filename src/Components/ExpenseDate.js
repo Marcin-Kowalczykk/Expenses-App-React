@@ -1,5 +1,6 @@
 import React from "react";
 import "./ExpenseDate.css";
+import ExpenseCard from "./ExpenseCard";
 
 const ExpenseDate = ({ date }) => {
 
@@ -8,11 +9,11 @@ const ExpenseDate = ({ date }) => {
   const year = date.getFullYear();
 
   return (
-    <section className="expense-date">
+    <ExpenseCard className="expense-date">
       <div className="expense-date__month">{month}</div>
       <div className="expense-date__year">{year}</div>
       <div className="expense-date__day">{day}</div> 
-    </section>
+    </ExpenseCard>
   );
 };
 
