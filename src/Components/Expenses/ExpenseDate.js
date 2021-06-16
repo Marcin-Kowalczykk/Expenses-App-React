@@ -1,6 +1,6 @@
 import React from "react";
 import "./ExpenseDate.css";
-import ExpenseCard from "./ExpenseCard";
+import ExpenseCard from "../UI/ExpenseCard";
 
 const ExpenseDate = ({ date }) => {
 
