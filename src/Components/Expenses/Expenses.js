@@ -1,11 +1,19 @@
 import React from "react";
-import "./Expenses.css"
+import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
 import ExpenseCard from "../UI/ExpenseCard";
+import ExpensesFilter from "./ExpensesFilter";
 
-const Expenses = ({items}) => {
+const Expenses = ({ items }) => {
+  const saveSelectedYearHandler = (selectedYearFromFilter) => {
+    console.log(`expenses: ${selectedYearFromFilter}`);
+  };
+
   return (
     <ExpenseCard className="expenses">
+      <div>
+        <ExpensesFilter onSaveSelectedYear={saveSelectedYearHandler} />
+      </div>
       <ExpenseItem
         title={items[0].title}
         date={items[0].date}
