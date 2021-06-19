@@ -1,4 +1,4 @@
-export const expensesList = [
+export const exampleList = [
   {
     id: "e1",
     title: "Toilet Paper",
