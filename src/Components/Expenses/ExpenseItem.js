@@ -12,14 +12,16 @@ const ExpenseItem = ({ title, date, amount }) => {
   // };
 
   return (
-    <ExpenseCard className="expense-item">
-      <ExpenseDate date={date} />
-      <section className="expense-item__description">
-        <h2>{title}</h2>
-        <p className="expense-item__price">${amount}</p>
-        {/* <button onClick={clickHandler}>Click me</button> */}
-      </section>
-    </ExpenseCard>
+    <li>
+      <ExpenseCard className="expense-item">
+        <ExpenseDate date={date} />
+        <section className="expense-item__description">
+          <h2>{title}</h2>
+          <p className="expense-item__price">${amount}</p>
+          {/* <button onClick={clickHandler}>Click me</button> */}
+        </section>
+      </ExpenseCard>
+    </li>
   );
 };
 
