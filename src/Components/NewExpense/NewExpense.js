@@ -6,11 +6,11 @@ import ExpenseForm from "./ExpenseForm";
 const NewExpense = (props) => {
   
   const saveExpenseDataHandler = (CopyExpenseDataFromForm) => {
-    const expenseDataFromForm = {
+    const expenseDataFromNewExpense = {
       ...CopyExpenseDataFromForm,
       id: Math.random().toString(),
     };
-    props.onAddExpenseData(expenseDataFromForm);
+    props.onAddExpenseData(expenseDataFromNewExpense);
   };
 
   return (
