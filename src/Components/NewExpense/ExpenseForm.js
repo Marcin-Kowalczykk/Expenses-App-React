@@ -20,7 +20,7 @@ const ExpenseForm = (props) => {
     event.preventDefault();
     const expenseDataFromForm = {
       title: selectedTitle,
-      amount: selectedAmount,
+      amount: +selectedAmount,
       date: new Date(selectedDate),
     };
     props.onSaveExpenseData(expenseDataFromForm); // wywoładnie dla rodzica
